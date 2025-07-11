@@ -38,7 +38,6 @@ const problemSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      // Register User Cases
       .addCase(getAllProblem.pending, (state) => {
         state.isLoading = true;
         state.error = null;
@@ -53,7 +52,6 @@ const problemSlice = createSlice({
         state.allProblem = null;
       })
   
-      // Login User Cases
       .addCase(solvedProblem.pending, (state) => {
         state.isLoading = true;
         state.error = null;
